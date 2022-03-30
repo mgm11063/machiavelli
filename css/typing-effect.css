@@ -1,0 +1,51 @@
+.typewriter p {
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.typewriter .link_color {
+  color: rgb(36, 70, 179);
+}
+
+.typewriter h3:nth-child(1) {
+  width: 4em;
+  animation: type 1.3s steps(20, end);
+  animation-fill-mode: forwards;
+}
+
+.typewriter p:nth-child(2) {
+  width: 4em;
+  animation: type2 1.3s steps(20, end);
+  animation-delay: 1.3s;
+  animation-fill-mode: forwards;
+}
+.typewriter p:nth-child(3) {
+  width: 14em;
+  animation: type2 2.3s steps(30, end);
+  animation-delay: 2.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}

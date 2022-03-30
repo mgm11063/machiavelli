@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+body {
+  font-family: "silver";
+}
+
+.full_screen_ef:after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+}
+.full_screen_ef:before {
+  z-index: 100;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  position: absolute;
+  display: block;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 0),
+    linear-gradient(
+      90deg,
+      rgba(255, 0, 0, 0.06),
+      rgba(0, 255, 0, 0.02),
+      rgba(0, 0, 255, 0.06)
+    );
+  background-size: 100% 2px, 3px 100%;
+}
+
+.bottom_menu {
+  position: fixed;
+  bottom: 0;
+  border-top: 4px solid #fff;
+}
+
+.window_option button::before {
+  content: "시작";
+  display: block;
+  position: absolute;
+  left: 2.5rem;
+  font-size: 1.875rem /* 30px */;
+  line-height: 2.1rem;
+}
+
+.timeset {
+  line-height: 2.8rem;
+}
+
+.out_border {
+  cursor: default;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: right;
+  padding: 0.2vh 0.2vh 0.2vh 4px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white black black white;
+}
+
+.in_border {
+  cursor: default;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black white white black;
+}
+
+/* 우주배경 */
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: 0%;
+  background-position: 0;
+} /* ---- stats.js ---- */
+
+.js-count-particles {
+  font-size: 1.1em;
+}
+
+/* 드레그 엔 드롭 */
+#drag-1 {
+  position: absolute;
+  touch-action: none;
+  user-select: none;
+}
+
+/* 바탕화면 아이콘 */
+.direct_icon {
+  position: absolute;
+  cursor: pointer;
+}
+.direct_icon * {
+  cursor: pointer;
+}
+
+/* 모달창 */
+#winbox-1.min {
+  transform: translate(141px, calc(100vh - 40px)) !important;
+  width: 137px !important;
+  height: 35px !important;
+}
+.winbox {
+  background-color: #bdbebd;
+}
+.wb-header {
+  box-sizing: border-box;
+  background: #05167f;
+  border: 2px solid #bdbebd;
+}
+.wb-body {
+  background-color: #bdbebd;
+  padding: 0.5rem 1rem;
+}
+.wb-title {
+  background: #05167f;
+  font-size: 1.25rem;
+  font-family: "silver";
+}
+.wb-icon {
+  background: #05167f;
+}
+.wb-icon * {
+  width: 18px;
+}
+
+.wb-min {
+  background-image: url("../images/btn_minimize.png");
+}
+
+.wb-max {
+  background-image: url("../images/btn_expansion.png");
+}
+.wb-close {
+  background-image: url("../images/btn_close.png");
+}
+
+.sun {
+  transform: translate(47%, -58%);
+  opacity: 0.9;
+  background: linear-gradient(
+    174deg,
+    rgba(255, 0, 0, 1) 44%,
+    rgba(255, 123, 0, 1) 63%
+  );
+  height: 13rem;
+  width: 13rem;
+  border-radius: 50%;
+  box-shadow: 0 -0.5vmin 4vmin red;
+}

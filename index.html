@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/all_bg.css" />
+  <link rel="stylesheet" href="css/modal.css" />
+  <!-- <link rel="stylesheet" href="css/typing-effect.css" /> -->
+  <title>MACHIAVELLI</title>
+</head>
+<!-- <img class="draggable w-20 drag_none" src="images/computer.png" alt="computer_incon"> -->
+
+<body class="full_screen_ef fixed w-full h-screen max-h-screen text-3xl" style="overflow:hidden;">
+  <div class="sun absolute right-1/2 top-1/2"></div>
+  <div class="plop"></div>
+  <div class="bottom_menu pr-2 w-full px-1 py-1 flex justify-center items-center bg-gray-300 " style="height: 45px;">
+    <div class="window_option relative items-center h-full">
+
+      <ul id="win_list" class="hidden absolute w-48">
+        <div>
+          <li>
+            <img src="/images/help.png" alt="도우미 아이콘">
+            도우미
+          </li>
+          <li>
+            <img src="/images/help.png" alt="도우미 아이콘">
+            도우미
+          </li>
+          <li>
+            <img src="/images/help.png" alt="도우미 아이콘">
+            도우미
+          </li>
+          <li>
+            <img src="/images/help.png" alt="도우미 아이콘">
+            도우미
+          </li>
+          <li>
+            <img src="/images/help.png" alt="도우미 아이콘">
+            도우미
+          </li>
+          <li>
+            <img src="/images/help.png" alt="도우미 아이콘">
+            도우미
+          </li>
+        </div>
+      </ul>
+
+      <button class="out_border w-28 h-full relative px-2" id="window_btn">
+        <img class="w-7 drag_none" src="images/win95_icon.png" alt="win-95 icon">
+      </button>
+    </div>
+    <div class="timeset w-32 ml-auto in_border h-full items-center">
+      <span class="text-center block" id="time"></span>
+    </div>
+  </div>
+
+
+  <!-- 바탕화면 아이콘 -->
+  <div id="particles-js" class="top-0" style="position: inherit; z-index: -10;">
+    <div id="my_computer" class="direct_icon draggable text-center top-9 left-10 text-white w-28 block" id="drag-1">
+      <img src="images/computer.png" class="w-full block h-full" alt="computer_icon">
+      <span class="block pt-2 tracking-tighter" style="transform: translateX(-0.2rem);">내 컴퓨터</span>
+    </div>
+  </div>
+
+
+
+  <!-- 윈도우 창들 -->
+  <div id="backstore" style="display: none">
+    <div id="content">
+      <div class="typewriter">
+        <h3>인트로</h3>
+        <p>문경민</p>
+        <p class="link_color"><a href="https://www.instagram.com/jeongtaehyeon01/" target='_blank'>Instagram</a> / <a
+            href="https://open.kakao.com/o/srIjyeEd" target='_blank'>Kakao</a> / <a
+            href="mailto:mgm11063@gmail.com">Gamil</a> / <a
+            href="https://www.op.gg/summoner/userName=%EC%99%80%EB%93%9C%EB%B0%95%EC%9D%B4%EC%84%9C%ED%8F%BF"
+            target="_blank">League of legends</a></p>
+        <p>21세, 중동역 거주</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="dist/winbox.bundle.js"></script>
+<script src="js/main.js"></script>
+<script src="js/typing-effect.js"></script>
+<script src="js/win-modal.js"></script>
+<script src="js/drag-drap.js"></script>
+<script src="js/win-start.js"></script>
+<script src="js/clock.js"></script>
